@@ -223,14 +223,14 @@ a:hover { opacity: 0.6; }
 /* ---------- Collection editorial（香氣系列頁）---------- */
 .collection-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 52px 32px;
-  max-width: 900px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px 14px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding-bottom: 56px;
+  padding-bottom: 44px;
 }
 .collection-item { display: block; }
-.collection-item:nth-child(even) { transform: translateY(48px); }
+.collection-item:nth-child(even) { transform: translateY(28px); }
 .collection-item .ci-media {
   position: relative;
   overflow: hidden;
@@ -238,8 +238,7 @@ a:hover { opacity: 0.6; }
 }
 .collection-item .ci-media img {
   width: 100%;
-  aspect-ratio: 800 / 1966;
-  object-fit: cover;
+  height: auto;
   transition: transform 1.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .collection-item:hover .ci-media img { transform: scale(1.07); }
@@ -253,47 +252,48 @@ a:hover { opacity: 0.6; }
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px 14px 18px;
+  padding: 14px 6px 12px;
   text-align: center;
   color: #fff;
 }
 .collection-item .ci-copy .no {
-  font-size: 10px;
-  letter-spacing: 0.34em;
-  text-indent: 0.34em;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
   opacity: 0.85;
 }
 .collection-item .ci-copy h3 {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.24em;
-  text-indent: 0.24em;
-  margin-top: 3px;
-  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.25);
-}
-.collection-item .ci-copy .family {
-  font-size: 11px;
   letter-spacing: 0.16em;
   text-indent: 0.16em;
-  opacity: 0.9;
   margin-top: 2px;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+}
+.collection-item .ci-copy .family {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  opacity: 0.9;
+  margin-top: 1px;
 }
 .collection-item .ci-info {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 10px;
+  padding: 0 2px;
 }
 .collection-item .ci-info .vibe {
-  font-size: 12.5px;
+  font-size: 11.5px;
   color: #333;
-  letter-spacing: 0.06em;
-  line-height: 1.7;
+  letter-spacing: 0.03em;
+  line-height: 1.65;
 }
 .collection-item .ci-info .who {
-  font-size: 11.5px;
+  font-size: 10.5px;
   color: var(--gray);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   margin-top: 4px;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 /* ---------- 進場動畫 ---------- */
@@ -303,7 +303,7 @@ a:hover { opacity: 0.6; }
   transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .reveal.in { opacity: 1; transform: none; }
-.collection-item.reveal.in:nth-child(even) { transform: translateY(90px); }
+.collection-item.reveal.in:nth-child(even) { transform: translateY(28px); }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .product-card .card-media img, .collection-item .ci-media img { transition: none; }
@@ -626,8 +626,8 @@ a:hover { opacity: 0.6; }
   .product-grid.cols-6 { grid-template-columns: repeat(3, 1fr); }
   .product-detail, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .top-bar { display: none; }
-  .collection-grid { gap: 44px 22px; padding-bottom: 48px; }
-  .collection-item:nth-child(even), .collection-item.reveal.in:nth-child(even) { transform: translateY(44px); }
+  .collection-grid { grid-template-columns: repeat(3, 1fr); gap: 36px 18px; padding-bottom: 36px; }
+  .collection-item:nth-child(even), .collection-item.reveal.in:nth-child(even) { transform: translateY(22px); }
 }
 
 @media (max-width: 680px) {
@@ -639,9 +639,8 @@ a:hover { opacity: 0.6; }
   .order-item { grid-template-columns: 1fr; }
   .order-item .remove-item { justify-self: end; width: 44px; }
   .section { padding: 48px 0; }
-  .collection-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 16px; padding-bottom: 40px; }
-  .collection-item:nth-child(even), .collection-item.reveal.in:nth-child(even) { transform: translateY(36px); }
-  .collection-item .ci-copy h3 { font-size: 13px; }
+  .collection-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 14px; padding-bottom: 32px; }
+  .collection-item:nth-child(even), .collection-item.reveal.in:nth-child(even) { transform: translateY(24px); }
 }
 
 @media (max-width: 420px) {
