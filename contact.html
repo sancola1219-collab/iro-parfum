@@ -16,20 +16,23 @@
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="mailto:sancola1219@gmail.com">Email 諮詢</a>
+    <a href="contact.html">聯絡我們</a>
+  </div>
+</div>
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="header-inner">
     <a class="brand" href="index.html" aria-label="IRO 香色首頁">
       <span class="brand-mark">IRO</span>
       <span class="brand-sub">香色 · Iro Parfum</span>
     </a>
     <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <nav class="main-nav">
       <a href="index.html">首頁</a>
@@ -41,78 +44,72 @@
   </div>
 </header>
 <div class="page-hero">
-  <div class="container">
-    <h1>聯絡我們</h1>
-    <div class="breadcrumb"><a href="index.html">首頁</a><span class="sep">›</span>聯絡我們</div>
-  </div>
+  <h1>聯絡我們</h1>
+  <div class="breadcrumb"><a href="index.html">首頁</a><span class="sep">›</span>聯絡我們</div>
 </div>
-<section class="section">
-  <div class="container">
-    <div class="contact-grid">
-      <div>
-        <div class="section-head" style="margin-bottom:30px">
-          <div class="eyebrow">Contact</div>
-          <h2>找我們聊聊</h2>
-          <p>選香諮詢、訂單問題、通路合作，都歡迎來信。我們讀得比回得快，但一定會回。</p>
-        </div>
-        <div class="contact-list">
-          <div class="item"><div class="label">Email</div><div class="value"><a href="mailto:sancola1219@gmail.com">sancola1219@gmail.com</a></div></div>
-          <div class="item"><div class="label">Instagram</div><div class="value">籌備中，敬請期待</div></div>
-          <div class="item"><div class="label">LINE</div><div class="value">籌備中，敬請期待</div></div>
-        </div>
+<section class="container">
+  <div class="contact-grid">
+    <div>
+      <h2 class="section-title" style="text-align:left;text-indent:0">找我們聊聊</h2>
+      <p class="section-sub" style="text-align:left;text-indent:0;margin-bottom:28px">CONTACT US</p>
+      <p style="color:#333;margin-bottom:28px">選香諮詢、訂單問題、通路合作，都歡迎來信。我們讀得比回得快，但一定會回。</p>
+      <div class="contact-list">
+        <div class="item"><div class="label">Email</div><div class="value"><a href="mailto:sancola1219@gmail.com">sancola1219@gmail.com</a></div></div>
+        <div class="item"><div class="label">Instagram</div><div class="value">籌備中，敬請期待</div></div>
+        <div class="item"><div class="label">LINE</div><div class="value">籌備中，敬請期待</div></div>
       </div>
-      <div class="form-wrap" id="contact-form" style="margin:0">
-        <form class="js-contact-form">
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="c-name">姓名 <span class="req">*</span></label>
-              <input id="c-name" name="name" type="text" required autocomplete="name">
-            </div>
-            <div class="form-field">
-              <label for="c-phone">聯絡電話</label>
-              <input id="c-phone" name="phone" type="tel" autocomplete="tel">
-            </div>
-            <div class="form-field full">
-              <label for="c-email">Email <span class="req">*</span></label>
-              <input id="c-email" name="email" type="email" required autocomplete="email">
-            </div>
-            <div class="form-field full">
-              <label for="c-message">想說的話 <span class="req">*</span></label>
-              <textarea id="c-message" name="message" rows="5" required placeholder="例：喜歡乾淨的皂感、不喜歡太甜，平常上班擦，該選哪支？"></textarea>
-            </div>
-            <div class="form-field full">
-              <button type="submit" class="btn btn-solid">送出訊息</button>
-              <div class="form-hint" style="margin-top:10px">送出後會開啟你的信件軟體，內容已自動填好，直接寄出即可。</div>
-            </div>
+    </div>
+    <div class="form-wrap" id="contact-form" style="margin:0">
+      <form class="js-contact-form">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="c-name">姓名 <span class="req">*</span></label>
+            <input id="c-name" name="name" type="text" required autocomplete="name">
           </div>
-        </form>
-        <div class="form-fallback">
-          若信件軟體沒有自動開啟，請將下方內容複製後寄到 <strong>sancola1219@gmail.com</strong>。
-          <textarea rows="8" readonly aria-label="訊息內容備援文字，請複製後寄出"></textarea>
+          <div class="form-field">
+            <label for="c-phone">聯絡電話</label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="form-field full">
+            <label for="c-email">Email <span class="req">*</span></label>
+            <input id="c-email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="form-field full">
+            <label for="c-message">想說的話 <span class="req">*</span></label>
+            <textarea id="c-message" name="message" rows="5" required placeholder="例：喜歡乾淨的皂感、不喜歡太甜，平常上班擦，該選哪支？"></textarea>
+          </div>
+          <div class="form-field full">
+            <button type="submit" class="btn btn-solid btn-block">送出訊息</button>
+            <div class="form-hint" style="margin-top:10px">送出後會開啟你的信件軟體，內容已自動填好，直接寄出即可。</div>
+          </div>
         </div>
+      </form>
+      <div class="form-fallback">
+        若信件軟體沒有自動開啟，請將下方內容複製後寄到 <strong>sancola1219@gmail.com</strong>。
+        <textarea rows="8" readonly aria-label="訊息內容備援文字，請複製後寄出"></textarea>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="footer-inner">
     <div>
       <div class="f-brand">IRO</div>
-      <div class="f-sub">香色 · Iro Parfum</div>
-      <ul style="margin-top:18px">
+      <div class="f-sub">香色 · IRO PARFUM</div>
+      <ul style="margin-top:16px;list-style:none">
         <li>Email：<a href="mailto:sancola1219@gmail.com">sancola1219@gmail.com</a></li>
       </ul>
     </div>
     <div>
       <h3>香氣系列</h3>
       <ul>
-        <li><a href="product-brume.html">01 晨霧 BRUME</a></li>
-        <li><a href="product-blanc.html">02 白晝 BLANC</a></li>
-        <li><a href="product-rosee.html">03 霞 ROSÉ</a></li>
-        <li><a href="product-ember.html">04 曖曖 BRAISE</a></li>
-        <li><a href="product-maree.html">05 夜潮 MARÉE</a></li>
-        <li><a href="product-cendre.html">06 燼 CENDRE</a></li>
+        <li><a href="product-brume.html">N°01 晨霧 BRUME</a></li>
+        <li><a href="product-blanc.html">N°02 白晝 BLANC</a></li>
+        <li><a href="product-rosee.html">N°03 霞 ROSÉ</a></li>
+        <li><a href="product-ember.html">N°04 曖曖 BRAISE</a></li>
+        <li><a href="product-maree.html">N°05 夜潮 MARÉE</a></li>
+        <li><a href="product-cendre.html">N°06 燼 CENDRE</a></li>
       </ul>
     </div>
     <div>
@@ -125,7 +122,7 @@
       </ul>
     </div>
   </div>
-  <div class="footer-bottom container">© <span class="js-year">2026</span> IRO 香色 Iro Parfum</div>
+  <div class="footer-bottom">© <span class="js-year">2026</span> IRO 香色 IRO PARFUM</div>
 </footer>
 
 <script src="js/main.js"></script>

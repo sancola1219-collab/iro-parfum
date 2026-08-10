@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://{DOMAIN}/</loc></url>
-  <url><loc>https://{DOMAIN}/collection.html</loc></url>
-  <url><loc>https://{DOMAIN}/product-brume.html</loc></url>
-  <url><loc>https://{DOMAIN}/product-blanc.html</loc></url>
-  <url><loc>https://{DOMAIN}/product-rosee.html</loc></url>
-  <url><loc>https://{DOMAIN}/product-ember.html</loc></url>
-  <url><loc>https://{DOMAIN}/product-maree.html</loc></url>
-  <url><loc>https://{DOMAIN}/product-cendre.html</loc></url>
-  <url><loc>https://{DOMAIN}/about.html</loc></url>
-  <url><loc>https://{DOMAIN}/order.html</loc></url>
-  <url><loc>https://{DOMAIN}/contact.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/collection.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/product-brume.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/product-blanc.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/product-rosee.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/product-ember.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/product-maree.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/product-cendre.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/about.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/order.html</loc></url>
+  <url><loc>https://iro-parfum.pages.dev/contact.html</loc></url>
 </urlset>

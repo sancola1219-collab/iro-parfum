@@ -16,20 +16,23 @@
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="mailto:sancola1219@gmail.com">Email 諮詢</a>
+    <a href="contact.html">聯絡我們</a>
+  </div>
+</div>
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="header-inner">
     <a class="brand" href="index.html" aria-label="IRO 香色首頁">
       <span class="brand-mark">IRO</span>
       <span class="brand-sub">香色 · Iro Parfum</span>
     </a>
     <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <nav class="main-nav">
       <a href="index.html">首頁</a>
@@ -40,101 +43,85 @@
     </nav>
   </div>
 </header>
-<section class="product-hero">
-  <div class="product-visual" style="background:linear-gradient(160deg,#e8d3d6 0%,#c08a92 100%)">
-    <svg viewBox="0 0 120 250" role="img" aria-label="霞香水瓶示意"><defs><linearGradient id="lg-hero-rosee" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c08a92"/><stop offset="1" stop-color="#a76f78"/></linearGradient></defs><rect x="46" y="8" width="28" height="30" fill="#2a2521"/><rect x="50" y="38" width="20" height="14" fill="#c9bfae"/><rect x="22" y="52" width="76" height="198" rx="4" fill="#ffffff" fill-opacity="0.55" stroke="#1c1916" stroke-width="1.5"/><rect x="27" y="118" width="66" height="128" fill="url(#lg-hero-rosee)"/><rect x="36" y="86" width="48" height="66" fill="#faf7f0" stroke="#d8cfbe"/><text x="60" y="112" text-anchor="middle" font-size="11" letter-spacing="4" fill="#221e19" font-family="Georgia,serif">IRO</text><text x="60" y="134" text-anchor="middle" font-size="9" letter-spacing="2" fill="#7a7267" font-family="Georgia,serif">03</text></svg>
-  </div>
-  <div class="product-copy">
-    <div class="no">N°03 — 果香玫瑰調</div>
-    <h1>霞</h1>
-    <div class="en-name">ROSÉ</div>
-    <p class="desc">黃昏最後十分鐘的天色，粉裡帶金。霞把多汁的荔枝疊在玫瑰上，甜而不膩，像微醺時的臉頰。</p>
-    <p class="desc" style="margin-top:12px">約會與晚間場合的首選。</p>
-    <div class="price-line">30ml NT$1,480 ／ 50ml NT$2,180</div>
-    <div class="price-note">價格為目前建議售價，實際金額以訂購回覆確認為準。</div>
-    <div class="actions">
-      <a class="btn btn-solid" href="order.html?scent=%E9%9C%9E">立即訂購</a>
-      <a class="btn" href="collection.html">回香氣系列</a>
+<div class="page-hero">
+  <h1>N°03　霞</h1>
+  <div class="breadcrumb"><a href="index.html">首頁</a><span class="sep">›</span><a href="collection.html">香氣系列</a><span class="sep">›</span>霞</div>
+</div>
+<section class="container">
+  <div class="product-detail">
+    <div class="pd-img">
+      <img src="images/tile-rosee.jpg" alt="N°03 霞 ROSÉ 香水" width="1000" height="1000">
+    </div>
+    <div class="pd-info">
+      <div class="pd-no">N°03 — 果香玫瑰調</div>
+      <h1>霞</h1>
+      <div class="pd-en">ROSÉ</div>
+      <div class="pd-price">30ml NT$1,480 ／ 50ml NT$2,180</div>
+      <p class="pd-desc">黃昏最後十分鐘的天色，粉裡帶金。霞把多汁的荔枝疊在玫瑰上，甜而不膩，像微醺時的臉頰。</p>
+      <p class="pd-mood">約會與晚間場合的首選。</p>
+      <p class="pd-note">價格為目前建議售價，實際金額以訂購回覆確認為準。</p>
+      <div class="pd-actions">
+        <a class="btn btn-solid" href="order.html?scent=%E9%9C%9E">立即訂購</a>
+        <a class="btn" href="collection.html">回香氣系列</a>
+      </div>
     </div>
   </div>
+
+  <dl class="notes-table">
+    <div class="row"><dt>前調<span>Top Notes</span></dt><dd>荔枝、覆盆子、粉紅葡萄柚</dd></div>
+    <div class="row"><dt>中調<span>Heart Notes</span></dt><dd>玫瑰、牡丹</dd></div>
+    <div class="row"><dt>後調<span>Base Notes</span></dt><dd>琥珀、白麝香</dd></div>
+  </dl>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">Olfactory Notes</div>
-      <h2>香調結構</h2>
-    </div>
-    <div class="notes-pyramid">
-      <div class="note-row"><div class="label">前調<span>Top</span></div><div class="value">荔枝、覆盆子、粉紅葡萄柚</div></div>
-      <div class="note-row"><div class="label">中調<span>Heart</span></div><div class="value">玫瑰、牡丹</div></div>
-      <div class="note-row"><div class="label">後調<span>Base</span></div><div class="value">琥珀、白麝香</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section tint">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">More</div>
-      <h2>其他香氣</h2>
-    </div>
-    <div class="scent-grid">
-      <a class="scent-card" href="product-ember.html">
-        <div class="swatch" style="background:linear-gradient(160deg,#e2d2b8 0%,#b08d5f 100%)">
-          <svg viewBox="0 0 120 250" role="img" aria-label="曖曖香水瓶示意"><defs><linearGradient id="lg-card-ember" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b08d5f"/><stop offset="1" stop-color="#96744a"/></linearGradient></defs><rect x="46" y="8" width="28" height="30" fill="#2a2521"/><rect x="50" y="38" width="20" height="14" fill="#c9bfae"/><rect x="22" y="52" width="76" height="198" rx="4" fill="#ffffff" fill-opacity="0.55" stroke="#1c1916" stroke-width="1.5"/><rect x="27" y="118" width="66" height="128" fill="url(#lg-card-ember)"/><rect x="36" y="86" width="48" height="66" fill="#faf7f0" stroke="#d8cfbe"/><text x="60" y="112" text-anchor="middle" font-size="11" letter-spacing="4" fill="#221e19" font-family="Georgia,serif">IRO</text><text x="60" y="134" text-anchor="middle" font-size="9" letter-spacing="2" fill="#7a7267" font-family="Georgia,serif">04</text></svg>
-        </div>
-        <div class="card-info">
-          <span class="no">N°04</span>
-          <h3>曖曖　BRAISE</h3>
-          <div class="notes">木質琥珀調</div>
-          <div class="price">30ml NT$1,480 ／ 50ml NT$2,180</div>
-        </div>
+    <h2 class="section-title">其他香氣</h2>
+    <p class="section-sub">MORE SCENTS</p>
+    <div class="product-grid cols-3">
+      <a class="product-card" href="product-ember.html">
+        <img src="images/tile-ember.jpg" alt="N°04 曖曖 BRAISE 香水" width="1000" height="1000" loading="lazy">
+        <div class="p-no">N°04</div>
+        <div class="p-name">曖曖　BRAISE</div>
+        <div class="p-family">木質琥珀調</div>
+        <div class="p-price">30ml NT$1,480 ／ 50ml NT$2,180</div>
       </a>
-      <a class="scent-card" href="product-maree.html">
-        <div class="swatch" style="background:linear-gradient(160deg,#c3ccd6 0%,#5a6b80 100%)">
-          <svg viewBox="0 0 120 250" role="img" aria-label="夜潮香水瓶示意"><defs><linearGradient id="lg-card-maree" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a6b80"/><stop offset="1" stop-color="#46566a"/></linearGradient></defs><rect x="46" y="8" width="28" height="30" fill="#2a2521"/><rect x="50" y="38" width="20" height="14" fill="#c9bfae"/><rect x="22" y="52" width="76" height="198" rx="4" fill="#ffffff" fill-opacity="0.55" stroke="#1c1916" stroke-width="1.5"/><rect x="27" y="118" width="66" height="128" fill="url(#lg-card-maree)"/><rect x="36" y="86" width="48" height="66" fill="#faf7f0" stroke="#d8cfbe"/><text x="60" y="112" text-anchor="middle" font-size="11" letter-spacing="4" fill="#221e19" font-family="Georgia,serif">IRO</text><text x="60" y="134" text-anchor="middle" font-size="9" letter-spacing="2" fill="#7a7267" font-family="Georgia,serif">05</text></svg>
-        </div>
-        <div class="card-info">
-          <span class="no">N°05</span>
-          <h3>夜潮　MARÉE</h3>
-          <div class="notes">海洋辛香調</div>
-          <div class="price">30ml NT$1,480 ／ 50ml NT$2,180</div>
-        </div>
+      <a class="product-card" href="product-maree.html">
+        <img src="images/tile-maree.jpg" alt="N°05 夜潮 MARÉE 香水" width="1000" height="1000" loading="lazy">
+        <div class="p-no">N°05</div>
+        <div class="p-name">夜潮　MARÉE</div>
+        <div class="p-family">海洋辛香調</div>
+        <div class="p-price">30ml NT$1,480 ／ 50ml NT$2,180</div>
       </a>
-      <a class="scent-card" href="product-cendre.html">
-        <div class="swatch" style="background:linear-gradient(160deg,#b7aca2 0%,#4a423c 100%)">
-          <svg viewBox="0 0 120 250" role="img" aria-label="燼香水瓶示意"><defs><linearGradient id="lg-card-cendre" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a423c"/><stop offset="1" stop-color="#362f2a"/></linearGradient></defs><rect x="46" y="8" width="28" height="30" fill="#2a2521"/><rect x="50" y="38" width="20" height="14" fill="#c9bfae"/><rect x="22" y="52" width="76" height="198" rx="4" fill="#ffffff" fill-opacity="0.55" stroke="#1c1916" stroke-width="1.5"/><rect x="27" y="118" width="66" height="128" fill="url(#lg-card-cendre)"/><rect x="36" y="86" width="48" height="66" fill="#faf7f0" stroke="#d8cfbe"/><text x="60" y="112" text-anchor="middle" font-size="11" letter-spacing="4" fill="#221e19" font-family="Georgia,serif">IRO</text><text x="60" y="134" text-anchor="middle" font-size="9" letter-spacing="2" fill="#7a7267" font-family="Georgia,serif">06</text></svg>
-        </div>
-        <div class="card-info">
-          <span class="no">N°06</span>
-          <h3>燼　CENDRE</h3>
-          <div class="notes">煙燻皮革調</div>
-          <div class="price">30ml NT$1,480 ／ 50ml NT$2,180</div>
-        </div>
+      <a class="product-card" href="product-cendre.html">
+        <img src="images/tile-cendre.jpg" alt="N°06 燼 CENDRE 香水" width="1000" height="1000" loading="lazy">
+        <div class="p-no">N°06</div>
+        <div class="p-name">燼　CENDRE</div>
+        <div class="p-family">煙燻皮革調</div>
+        <div class="p-price">30ml NT$1,480 ／ 50ml NT$2,180</div>
       </a>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="footer-inner">
     <div>
       <div class="f-brand">IRO</div>
-      <div class="f-sub">香色 · Iro Parfum</div>
-      <ul style="margin-top:18px">
+      <div class="f-sub">香色 · IRO PARFUM</div>
+      <ul style="margin-top:16px;list-style:none">
         <li>Email：<a href="mailto:sancola1219@gmail.com">sancola1219@gmail.com</a></li>
       </ul>
     </div>
     <div>
       <h3>香氣系列</h3>
       <ul>
-        <li><a href="product-brume.html">01 晨霧 BRUME</a></li>
-        <li><a href="product-blanc.html">02 白晝 BLANC</a></li>
-        <li><a href="product-rosee.html">03 霞 ROSÉ</a></li>
-        <li><a href="product-ember.html">04 曖曖 BRAISE</a></li>
-        <li><a href="product-maree.html">05 夜潮 MARÉE</a></li>
-        <li><a href="product-cendre.html">06 燼 CENDRE</a></li>
+        <li><a href="product-brume.html">N°01 晨霧 BRUME</a></li>
+        <li><a href="product-blanc.html">N°02 白晝 BLANC</a></li>
+        <li><a href="product-rosee.html">N°03 霞 ROSÉ</a></li>
+        <li><a href="product-ember.html">N°04 曖曖 BRAISE</a></li>
+        <li><a href="product-maree.html">N°05 夜潮 MARÉE</a></li>
+        <li><a href="product-cendre.html">N°06 燼 CENDRE</a></li>
       </ul>
     </div>
     <div>
@@ -147,7 +134,7 @@
       </ul>
     </div>
   </div>
-  <div class="footer-bottom container">© <span class="js-year">2026</span> IRO 香色 Iro Parfum</div>
+  <div class="footer-bottom">© <span class="js-year">2026</span> IRO 香色 IRO PARFUM</div>
 </footer>
 
 <script src="js/main.js"></script>

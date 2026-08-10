@@ -128,6 +128,30 @@
     });
   }
 
+  // 首頁形象輪播
+  var carousel = document.querySelector('.hero-carousel');
+  if (carousel) {
+    var slides = carousel.querySelectorAll('.slide');
+    var dots = carousel.querySelectorAll('.dots button');
+    var current = 0;
+    var timer = null;
+
+    function show(i) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (i + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+    function start() { timer = setInterval(function () { show(current + 1); }, 4500); }
+    function restart() { clearInterval(timer); start(); }
+
+    dots.forEach(function (d, i) {
+      d.addEventListener('click', function () { show(i); restart(); });
+    });
+    start();
+  }
+
   // 頁尾年份
   var year = document.querySelector('.js-year');
   if (year) year.textContent = new Date().getFullYear();
