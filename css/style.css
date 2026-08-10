@@ -179,8 +179,7 @@ a:hover { opacity: 0.6; }
 }
 .product-card .card-media img {
   width: 100%;
-  aspect-ratio: 900 / 1406;
-  object-fit: cover;
+  height: auto;
   transition: transform 1.1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .product-card:hover .card-media img { transform: scale(1.06); }
