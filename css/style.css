@@ -169,8 +169,8 @@ a:hover { opacity: 0.6; }
 .product-card .card-media {
   position: relative;
   overflow: hidden;
-  border-radius: 300px 300px 0 0;
-  margin-bottom: 14px;
+  border-radius: 50%;
+  margin-bottom: 16px;
 }
 .product-card .card-media img {
   width: 100%;
