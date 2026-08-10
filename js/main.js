@@ -152,6 +152,26 @@
     start();
   }
 
+  // 進場動畫
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { io.observe(el); });
+    // 保底：無論如何 2.5 秒後全部顯示，避免任何環境下內容卡在隱形狀態
+    setTimeout(function () {
+      revealEls.forEach(function (el) { el.classList.add('in'); });
+    }, 2500);
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in'); });
+  }
+
   // 頁尾年份
   var year = document.querySelector('.js-year');
   if (year) year.textContent = new Date().getFullYear();
