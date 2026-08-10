@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: 網域確定後把 {DOMAIN} 換成正式網域
-Sitemap: https://{DOMAIN}/sitemap.xml
+Sitemap: https://iro-parfum.pages.dev/sitemap.xml
