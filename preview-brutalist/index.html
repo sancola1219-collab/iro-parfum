@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRO 香色｜BRUTALIST 風格預覽</title>
+<meta name="robots" content="noindex">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Helvetica, Arial, "PingFang TC", "微軟正黑體", sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { display: block; max-width: 100%; }
+
+/* ticker */
+.ticker {
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 6px 0;
+}
+.ticker span {
+  display: inline-block;
+  animation: tick 18s linear infinite;
+}
+@keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #000;
+}
+.logo { font-size: 22px; font-weight: 700; letter-spacing: 0.28em; }
+nav { display: flex; gap: 18px; font-size: 11px; font-weight: 700; }
+
+/* hero */
+.hero { border-bottom: 1px solid #000; position: relative; }
+.hero img { width: 100%; aspect-ratio: 1672 / 700; object-fit: cover; filter: grayscale(35%) contrast(1.05); }
+.hero .tag {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* grid 商品格：試算表式硬格線 */
+.sheet-head {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 120px;
+  border-bottom: 1px solid #000;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 8px 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cell {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 0 0 14px;
+  text-align: center;
+}
+.cell:nth-child(3n) { border-right: none; }
+.cell img { width: 100%; aspect-ratio: 1 / 1.1; object-fit: cover; }
+.cell .no { font-size: 10px; margin-top: 10px; color: #555; }
+.cell .name { font-weight: 700; font-size: 13px; letter-spacing: 0.14em; margin-top: 2px; }
+.cell .fam { font-size: 10px; color: #555; margin-top: 2px; }
+.cell .price { font-size: 11px; margin-top: 6px; }
+.cell .order {
+  display: inline-block;
+  margin-top: 8px;
+  border: 1px solid #000;
+  padding: 5px 18px;
+  font-weight: 700;
+  font-size: 10px;
+}
+.cell .order:hover { background: #000; color: #fff; text-decoration: none; }
+
+/* 資料表 */
+.datatable { border-bottom: 1px solid #000; }
+.datatable h2 {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 12px 16px;
+  border-bottom: 1px solid #000;
+}
+table { width: 100%; border-collapse: collapse; font-size: 11px; }
+th, td { border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 8px 10px; text-align: left; }
+th { font-size: 10px; background: #000; color: #fff; }
+th:last-child, td:last-child { border-right: none; }
+tr:last-child td { border-bottom: none; }
+.table-scroll { overflow-x: auto; }
+
+/* manifesto */
+.manifesto {
+  border-bottom: 1px solid #000;
+  padding: 44px 16px;
+  text-align: center;
+}
+.manifesto h2 { font-size: clamp(20px, 5vw, 42px); font-weight: 700; letter-spacing: 0.1em; }
+.manifesto p { margin-top: 10px; font-size: 11px; color: #555; }
+
+/* footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 22px 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 10px;
+}
+footer a { color: #fff; }
+
+.backbar {
+  text-align: center;
+  padding: 10px;
+  background: #ffec00;
+  font-weight: 700;
+  font-size: 11px;
+  border-bottom: 1px solid #000;
+  text-transform: none;
+}
+@media (max-width: 680px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .cell:nth-child(3n) { border-right: 1px solid #000; }
+  .cell:nth-child(2n) { border-right: none; }
+  nav { gap: 10px; font-size: 10px; }
+  .logo { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="backbar">⚠ 風格預覽（BALENCIAGA 粗獷主義路線）— 正式網站不受影響 · <a href="/">回目前版本</a></div>
+
+<div class="ticker"><span>IRO PARFUM — 每一支香水，都是一種顏色 — SIX COLORS SIX SCENTS — 小批量調製 SMALL BATCH — 不分性別 UNISEX — IRO PARFUM — 每一支香水，都是一種顏色 — SIX COLORS SIX SCENTS — 小批量調製 SMALL BATCH — 不分性別 UNISEX — </span></div>
+
+<header>
+  <div class="logo">IRO 香色</div>
+  <nav>
+    <a href="#grid">香氣 SCENTS</a>
+    <a href="#data">規格 DATA</a>
+    <a href="#order">訂購 ORDER</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="../images/hero-01.jpg" alt="IRO 形象照">
+  <div class="tag">FW 2026 — 六色系列</div>
+</div>
+
+<div class="sheet-head">
+  <div>NO.</div><div>PRODUCT</div><div>FAMILY</div><div style="text-align:right">PRICE / NTD</div>
+</div>
+
+<div class="grid" id="grid">
+  <a class="cell" href="../product-brume.html">
+    <img src="../images/bottle-brume.jpg" alt="晨霧">
+    <div class="no">N°01</div><div class="name">晨霧 BRUME</div><div class="fam">綠意柑橘</div>
+    <div class="price">30ML 1,480 / 50ML 2,180</div><span class="order">訂購 ORDER</span>
+  </a>
+  <a class="cell" href="../product-blanc.html">
+    <img src="../images/bottle-blanc.jpg" alt="白晝">
+    <div class="no">N°02</div><div class="name">白晝 BLANC</div><div class="fam">白花皂感</div>
+    <div class="price">30ML 1,480 / 50ML 2,180</div><span class="order">訂購 ORDER</span>
+  </a>
+  <a class="cell" href="../product-rosee.html">
+    <img src="../images/bottle-rosee.jpg" alt="霞">
+    <div class="no">N°03</div><div class="name">霞 ROSÉ</div><div class="fam">果香玫瑰</div>
+    <div class="price">30ML 1,480 / 50ML 2,180</div><span class="order">訂購 ORDER</span>
+  </a>
+  <a class="cell" href="../product-ember.html">
+    <img src="../images/bottle-ember.jpg" alt="曖曖">
+    <div class="no">N°04</div><div class="name">曖曖 BRAISE</div><div class="fam">木質琥珀</div>
+    <div class="price">30ML 1,480 / 50ML 2,180</div><span class="order">訂購 ORDER</span>
+  </a>
+  <a class="cell" href="../product-maree.html">
+    <img src="../images/bottle-maree.jpg" alt="夜潮">
+    <div class="no">N°05</div><div class="name">夜潮 MARÉE</div><div class="fam">海洋辛香</div>
+    <div class="price">30ML 1,480 / 50ML 2,180</div><span class="order">訂購 ORDER</span>
+  </a>
+  <a class="cell" href="../product-cendre.html">
+    <img src="../images/bottle-cendre.jpg" alt="燼">
+    <div class="no">N°06</div><div class="name">燼 CENDRE</div><div class="fam">煙燻皮革</div>
+    <div class="price">30ML 1,480 / 50ML 2,180</div><span class="order">訂購 ORDER</span>
+  </a>
+</div>
+
+<div class="datatable" id="data">
+  <h2>SCENT DATA SHEET — 香調規格表</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>NO.</th><th>名稱</th><th>前調 TOP</th><th>中調 HEART</th><th>後調 BASE</th></tr>
+    <tr><td>N°01</td><td>晨霧 BRUME</td><td>佛手柑・綠葉・杜松子</td><td>橙花・小蒼蘭・鼠尾草</td><td>白麝香・雪松・苔蘚</td></tr>
+    <tr><td>N°02</td><td>白晝 BLANC</td><td>西洋梨・粉紅胡椒</td><td>茉莉・鈴蘭・依蘭</td><td>白麝香・檀木</td></tr>
+    <tr><td>N°03</td><td>霞 ROSÉ</td><td>荔枝・覆盆子・粉紅葡萄柚</td><td>玫瑰・牡丹</td><td>琥珀・白麝香</td></tr>
+    <tr><td>N°04</td><td>曖曖 BRAISE</td><td>肉桂・小豆蔻</td><td>焚香・玫瑰木・鳶尾</td><td>琥珀・香草・勞丹脂</td></tr>
+    <tr><td>N°05</td><td>夜潮 MARÉE</td><td>海鹽・粉紅葡萄柚</td><td>迷迭香・快樂鼠尾草</td><td>龍涎香・岩蘭草・麝香</td></tr>
+    <tr><td>N°06</td><td>燼 CENDRE</td><td>黑胡椒・番紅花</td><td>皮革・菸草葉</td><td>癒創木・廣藿香・香草</td></tr>
+  </table>
+  </div>
+</div>
+
+<div class="manifesto">
+  <h2>每一支香水，都是一種顏色</h2>
+  <p>「IRO」＝日文「色」— 以氣味調色 · 小批量調製 · 不分性別</p>
+</div>
+
+<footer id="order">
+  <div>IRO 香色 IRO PARFUM © 2026</div>
+  <div><a href="../order.html">線上訂購 ORDER</a> · <a href="../contact.html">聯絡 CONTACT</a> · <a href="mailto:sancola1219@gmail.com">EMAIL</a></div>
+</footer>
+
+</body>
+</html>
